@@ -6,6 +6,7 @@ gem 'rack'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'activerecord'
+gem 'rake'
 
 group :development, :tet do
 	gem 'sqlite3'
@@ -15,4 +16,5 @@ end
 group :test do
 	gem 'rspec'
 	gem 'rack-test'
+	gem 'database_cleaner'
 end
