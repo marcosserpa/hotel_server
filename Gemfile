@@ -4,7 +4,13 @@ ruby '2.3.0'
 
 gem 'rack'
 gem 'sinatra'
-gem 'pry'
+gem 'sinatra-activerecord'
+gem 'activerecord'
+
+group :development, :tet do
+	gem 'sqlite3'
+	gem 'pry'
+end
 
 group :test do
 	gem 'rspec'
