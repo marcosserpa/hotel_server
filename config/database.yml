@@ -5,3 +5,11 @@ development:
 test:
   adapter: sqlite3
   database: db/hotel_test.sqlite3
+
+production:
+  adapter: postgresql
+  user:
+  password:
+  pool: 5
+  timeout: 5000
+  database: hotel

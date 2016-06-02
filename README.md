@@ -1,7 +1,9 @@
-### OBS: You need to have the gem *bundler* installed
+### OBS: You need to have the gem *bundler* installed.
 
 # BASIC SETTINGS
 ## to install gems
+
+Run
 
 ```shell
 bundle install
@@ -10,6 +12,12 @@ bundle install
 
 # TO RUN TESTS:
 ## to setup test database
+
+```shell
+rake test_database_setup
+```
+
+or you can run each instruction manually
 
 ```shell
 rake db:migrate
@@ -25,6 +33,14 @@ rspec
 
 # TO RUN THE APP:
 # to setup the database
+
+Run
+
+```shell
+rake database_setup
+```
+
+or you can run each instruction manually
 
 ```shell
 rake db:migrate
