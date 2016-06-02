@@ -119,7 +119,7 @@ RSpec.describe HotelApi do
 
         put '/hotels/1', hotel_params, { 'Accept' => 'application/json' }
 
-        expect(last_response.body).to eql("Not Found")
+        expect(last_response.body).to eql("<h1>Not Found</h1>")
         expect(last_response.status).to eql(404)
       end
     end
@@ -179,7 +179,7 @@ RSpec.describe HotelApi do
       it "returns none" do
         get '/search', { words: 'Amsterdam' }, { 'Accept' => 'application/json' }
 
-        expect(last_response.body).to eql("<h1> Not Found</h1>")
+        expect(last_response.body).to eql("<h1>Not Found</h1>")
         expect(last_response.status).to eql(404)
       end
     end
@@ -217,7 +217,7 @@ RSpec.describe HotelApi do
 
         get '/search', { words: 'Amsterdam' }, { 'Accept' => 'application/json' }
 
-        expect(JSON.parse(last_response.body)).to eql([{ 'id' => 1, 'name' => "Amsterdam Premium Hotel", 'address' => "Marcantilaan St. 134", 'star_rating' => 4, 'accomodation_type' => 'single' }, { 'id' => 1, 'name' => "Amsterdam Hotel", 'address' => "Marcantilaan St. 134", 'star_rating' => 5, 'accomodation_type' => 'single' }])
+        expect(JSON.parse(last_response.body)).to eql([{ 'id' => 1, 'name' => "Amsterdam Premium Hotel", 'address' => "Marcantilaan St. 134", 'star_rating' => 4, 'accomodation_type' => 'single' }, { 'id' => 2, 'name' => "Amsterdam Hotel", 'address' => "Marcantilaan St. 134", 'star_rating' => 5, 'accomodation_type' => 'single' }])
         expect(last_response.status).to eql(200)
       end
     end
