@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/activerecord'
+require 'pry'
 
 class Hotel < ActiveRecord::Base
 end
@@ -11,5 +12,6 @@ class HotelApi < Sinatra::Base
 	get '/' do
 		[200, Hotel.all.to_json]
 	end
+
 
 end

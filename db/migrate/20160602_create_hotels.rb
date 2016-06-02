@@ -4,7 +4,7 @@ class CreateHotels < ActiveRecord::Migration
       t.string :name
       t.string :address
       t.integer :star_rating
-      t.string :accomotaion_type
+      t.string :accomodation_type
     end
   end
 end

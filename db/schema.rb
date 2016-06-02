@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20160602) do
     t.string  "name"
     t.string  "address"
     t.integer "star_rating"
-    t.string  "accomotaion_type"
+    t.string  "accomodation_type"
   end
 
 end
