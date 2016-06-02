@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-RSpec.describe App do
+RSpec.describe HotelApi do
   def app
-    App
+    HotelApi
   end
 
   describe "Test" do

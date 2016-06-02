@@ -1,6 +1,6 @@
 require 'sinatra'
 
-class App < Sinatra::Base
+class HotelApi < Sinatra::Base
 
 	get '/hi' do
 		"Hello World!"
