@@ -19,6 +19,7 @@
 
 ENV['RACK_ENV'] = 'test'
 
+# require 'sinatra/activerecord'
 require './config/environment'
 
 RSpec.configure do |config|

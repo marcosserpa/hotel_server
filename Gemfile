@@ -6,6 +6,7 @@ gem 'rack'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'activerecord'
+gem 'rake'
 
 group :development, :tet do
 	gem 'sqlite3'
