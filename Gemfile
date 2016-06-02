@@ -9,7 +9,7 @@ gem 'activerecord'
 gem 'rake'
 gem 'pg'
 
-group :development, :tet do
+group :development, :test do
 	gem 'sqlite3'
 	gem 'pry'
 end

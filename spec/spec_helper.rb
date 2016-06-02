@@ -20,7 +20,6 @@
 ENV['RACK_ENV'] = 'test'
 
 require 'database_cleaner'
-# require 'sinatra/activerecord'
 require './config/environment'
 
 RSpec.configure do |config|

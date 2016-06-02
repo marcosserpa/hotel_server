@@ -1,6 +1,5 @@
 require 'sinatra'
 require 'sinatra/activerecord'
-require 'pry'
 
 class Hotel < ActiveRecord::Base
 end
